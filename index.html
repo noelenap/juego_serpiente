@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de la Serpiente 🐍</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Juego de la Serpiente 🐍</h1>
+        <div id="marcador">
+            Puntos: <span id="puntos">0</span> | 
+            🏆 Récord: <span id="record">0</span>
+        </div>
+    </header>
+
+    <main>
+        <div id="contenedor-juego">
+            <canvas id="canvasJuego" width="400" height="400"></canvas>
+            <div id="pantalla-inicio">
+                <button id="botonIniciar">Iniciar Juego</button>
+            </div>
+        </div>
+
+        <div id="controles-tactiles">
+            <button id="btnArriba" class="btn-tactil">▲</button>
+            <div class="fila-medio">
+                <button id="btnIzquierda" class="btn-tactil">◀</button>
+                <button id="btnDerecha" class="btn-tactil">▶</button>
+            </div>
+            <button id="btnAbajo" class="btn-tactil">▼</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
